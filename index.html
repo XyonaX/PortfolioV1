@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Dependencia de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Archivo JS de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("service_l9kga6q");
+      })();
+    </script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col">
+        <div class="col col-sm-12 col-lg-12">
+          <nav
+            class="container-fluid navbar navbar-expand-lg justify-content-between fixed-top"
+          >
+            <div class="container-fluid">
+              <div class="logo navbar-brand">
+                <a href="index.html"
+                  >Jonatan <i class="fa-solid fa-code"></i
+                ></a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#acerca">Acerca</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <section class="row justify-content-center" id="inicio">
+        <div class="popup" id="popup">
+          <p>
+            La página sigue en construcción, si encuentra algún bug/error lo
+            sentimos :(
+          </p>
+        </div>
+        <div class="row align-items-center justify-content-center mt-5">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="hero-text text-center">
+              <div class="img-fluid">
+                <img src="./assets/animation_300_lh3wz2wj.gif" alt="" />
+              </div>
+              <h1 class="mt-4">Vargas Jonatan</h1>
+              <p class="">Web Devoloper</p>
+              <br />
+              <button class="btn rounded-2">
+                <a href="#contacto">Contáctame</a>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-6 col-lg-6">
+            <div class="hero-img">
+              <img
+                class="img-fluid"
+                src="./assets/Developer activity-bro.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row align-items-center" id="acerca">
+        <div
+          class="row justify-content-center align-content-center text-center mt-4"
+        >
+          <article class="about col-md-4 col-lg-4 p-2">
+            <h2 class="fw-bold">Vargas Jonatan</h2>
+            <h5 class="fw-bold">Web Developer</h5>
+            <p class="my-4">
+              Soy estudiante de licenciatura en sistemas, me encuentro en un
+              aprendizaje constante en el cual estoy más enfocado en lo que es
+              el desarrollo frontend.
+              <br />
+              Durante el transcurso del tiempo me gustaria convertirme en un
+              desarrollador <b>Fullstack</b> y desempeñarme de una manera más
+              eficiente en las areas de un futuro trabajo.
+            </p>
+            <button class="btn rounded-2">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1Lwhc6T2SZXB767hLOd7CojFefbpsFg41/view?usp=drive_link"
+                download="MiCV.pdf"
+                >Descargar CV</a
+              >
+            </button>
+          </article>
+          <article class="col-sm-10 col-md-4 col-lg-4 p-2 ms-4">
+            <h2 class="fw-bold">Mis Habilidades</h2>
+            <div class="mt-4">
+              <div class="d-flex justify-content-center">
+                <p class="skills fw-bold">HTML5</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-html5"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                  <path
+                    d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  style="width: 85%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="d-flex justify-content-center">
+                <p class="skills fw-bold">CSS3</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-css3"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                  <path
+                    d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  style="width: 70%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  70%
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="d-flex justify-content-center">
+                <p class="skills fw-bold">JS</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-javascript"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                  <path d="M7.5 8h3v8l-2 -1"></path>
+                  <path
+                    d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  style="width: 74%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  74%
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="d-flex justify-content-center">
+                <p class="skills fw-bold">Bootstrap</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-bootstrap"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2"
+                  ></path>
+                  <path
+                    d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2"
+                  ></path>
+                  <path
+                    d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  style="width: 75%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+            <div class="my-2">
+              <div class="d-flex justify-content-center">
+                <p class="skills fw-bold">React</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-react"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102"
+                  ></path>
+                  <path
+                    d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102"
+                  ></path>
+                  <path
+                    d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2"
+                  ></path>
+                  <path
+                    d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2"
+                  ></path>
+                  <path
+                    d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896"
+                  ></path>
+                  <path
+                    d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897"
+                  ></path>
+                  <path
+                    d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example with label"
+                  style="width: 48%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  48%
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="row justify-content-center" id="servicios">
+        <div
+          class="row align-items-center justify-content-center mt-4"
+          id="centrar-cards"
+        >
+          <h3 class="text-center my-4">Mis servicios</h3>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 align">
+            <div class="card-deck">
+              <div
+                class="card p-2 rounded-3"
+                style="width: 20rem; height: 14rem"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  class="card-img-top"
+                >
+                  <path
+                    d="M20,3H4C2.897,3,2,3.897,2,5v14c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V5C22,3.897,21.103,3,20,3z M4,19V7h16 l0.002,12H4z"
+                  ></path>
+                  <path
+                    d="M9.293 9.293L5.586 13 9.293 16.707 10.707 15.293 8.414 13 10.707 10.707zM14.707 9.293L13.293 10.707 15.586 13 13.293 15.293 14.707 16.707 18.414 13z"
+                  ></path>
+                </svg>
+                <div class="card-body">
+                  <h4 class="card-title text-center">Programación Web</h4>
+                  <p class="card-text text-center">
+                    Desarrollo sitios y aplicaciones para plataformas Web. Te
+                    ayudo a construir tu proyectos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+            <div class="card-deck">
+              <div
+                class="card p-2 rounded-3"
+                style="width: 20rem; height: 14rem"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  class="card-img-top"
+                >
+                  <path
+                    d="M20,3H7C5.897,3,5,3.897,5,5v2H4C2.897,7,2,7.897,2,9v10c0,1.103,0.897,2,2,2h6c1.103,0,2-0.897,2-2h8c1.103,0,2-0.897,2-2 V5C22,3.897,21.103,3,20,3z M6,9h4l-0.003,9H4V9H6z M12,17V9c0-1.103-0.897-2-2-2H7V5h11v12H12z"
+                  ></path>
+                </svg>
+                <div class="card-body">
+                  <h4 class="card-title text-center">Diseño Web</h4>
+                  <p class="card-text text-center">
+                    Prototipo y maqueto tus diseños estáticos y los convierto en
+                    increíbles sitios y aplicaciones web responsivas, óptimas y
+                    accesibles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+            <div class="card-deck">
+              <div
+                class="card p-2 rounded-3"
+                style="width: 20rem; height: 14rem"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  class="card-img-top"
+                >
+                  <path
+                    d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+                  ></path>
+                  <path
+                    d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z"
+                  ></path>
+                </svg>
+                <div class="card-body">
+                  <h4 class="card-title text-center">SEO</h4>
+                  <p class="card-text text-center">
+                    Search Engine Optimization, optimizo tus sitios y
+                    aplicaciones web para que mejoren su posición en los
+                    buscadores orgánicamente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row justify-content-center" id="proyectos">
+        <div class="mt-4">
+          <h3 class="text-center my-4">Proyectos</h3>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/GifExpertApp.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 1</h3>
+          </div>
+          <p class="mt-2 fw-bold text-wrap">
+            Este es una app para buscar gif, consumiendo una api para traer
+            dichos gif
+          </p>
+          <p class="below-text text-start text-wrap">
+            Tecnologías utilizadas: React,Bootstrap
+          </p>
+          <p class="below-text link-demo">
+            Link a la demo:
+            <a
+              target="_blank"
+              href="https://xyonax.github.io/react-GifExpertApp"
+              >Demo</a
+            >
+          </p>
+          <p class="redes">
+            Link al repo:
+            <a
+              href="https://github.com/XyonaX/react-GifExpertApp"
+              target="_blank"
+              class="mx-2"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/argPrograma.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 2</h3>
+          </div>
+          <p class="mt-2 fw-bold text-wrap">
+            Una lading page que se desarrollo en conjunto con otros compañeros
+            para el trabajo final de argentina programa
+          </p>
+          <p class="below-text text-start text-wrap">
+            Tecnologías utilizadas: HTML,CSS,Bootstrap,jQuery,Ajax
+          </p>
+          <p class="below-text link-demo">
+            Link a la demo:
+            <a target="_blank" href="https://ap-pf.vercel.app/">Demo</a>
+          </p>
+          <p class="redes">
+            Link al repo:
+            <a
+              href="https://gitlab.com/jonatan.vargasportillo/argentinaprograma-pf/tree/main"
+              target="_blank"
+              class="mx-2"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/githubimg.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 3</h3>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/githubimg.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 4</h3>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/githubimg.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 5</h3>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-4 col-lg-4 galeria-img mt-4">
+          <div class="img-container">
+            <img
+              class="img-fluid"
+              src="./assets/githubimg.png"
+              alt="Proyectos"
+            />
+            <h3 class="img-text text-nowrap">Proyecto 6</h3>
+          </div>
+        </div>
+      </section>
+      <section
+        class="row align-items-center justify-content-center"
+        id="contacto"
+      >
+        <div class="col-sm-10 col-md-6 col-lg-6">
+          <div class="formulario text-start">
+            <h3 class="text-center">Contáctame</h3>
+            <form
+              class="row g-3 fw-bold justify-content-center"
+              id="miFormulario"
+              action=""
+            >
+              <div class="col-lg-6">
+                <div>
+                  <label class="form-label" for="NombreyApellido"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control mb-2"
+                    minlength="3"
+                    id="NombreyApellido"
+                  />
+                  <span id="nombreyapellido_error"></span>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control mb-2"
+                  />
+                  <span id="email_error"></span>
+                </div>
+                <div>
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    class="form-control"
+                  ></textarea>
+                  <span id="mensaje_error"></span>
+                </div>
+              </div>
+              <div class="text-center mb-4">
+                <button class="btn-form">Enviar Mensaje</button>
+              </div>
+            </form>
+            <script src="./js/form.js"></script>
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-10 col-lg-6 text-center">
+          <div class="">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1130.9341588864218!2d-58.83710789891684!3d-27.499889263384635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456d2e62625f15%3A0xec6614debb37c87d!2sBarrio%20Juan%20XXIII!5e0!3m2!1ses!2sar!4v1681351133188!5m2!1ses!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="mapita rounded-4 mt-4"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <footer class="row">
+        <div class="col">
+          <div class="text-center mt-2 footer-text">
+            <p>
+              Copyright© 2023, Designed by
+              <a
+                href="https://www.instagram.com/xyona10x/"
+                target="_blank"
+                class="f-text"
+                >@jonatan</a
+              >
+            </p>
+          </div>
+          <div class="text-center gap-3 redes">
+            <a
+              href="https://www.facebook.com/JonatanEzeVargasPortillo/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+
+            <a href="https://www.instagram.com/xyona10x/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/JonatanEze_" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jonatan-ezequiel-vargas-portillo-ba828923a/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/XyonaX" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
